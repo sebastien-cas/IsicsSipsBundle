@@ -1,6 +1,6 @@
 <?php
 
-namespace Isics\EtransactionBundle\DependencyInjection;
+namespace Isics\SipsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -11,13 +11,13 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $treeBuilder
-            ->root('isics_etransaction')
+            ->root('isics_sips')
                 ->children()
                     ->scalarNode('merchant_id')->defaultValue('013044876511111')->end()
                     ->scalarNode('merchant_country')->defaultValue('fr')->end()
                     ->scalarNode('currency_code')->defaultValue(978)->end()
-                    ->scalarNode('pathfile')->defaultValue('%kernel.root_dir%/../data/e-transaction/pathfile')->end()
-                    ->scalarNode('request')->defaultValue('%kernel.root_dir%/../bin/e-transaction/request')->end()
+                    ->scalarNode('pathfile')->defaultValue('%kernel.root_dir%/../data/sips/pathfile')->end()
+                    ->scalarNode('request')->defaultValue('%kernel.root_dir%/../bin/sips/request')->end()
                     ->arrayNode('options')
                         ->children()
                             ->scalarNode('normal_return_url')->end()

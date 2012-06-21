@@ -1,4 +1,4 @@
 services:
-    isics_etransaction.etransaction_manager:
-        class:     Isics\EtransactionBundle\Manager\EtransactionManager
-        arguments: [%isics_etransaction.config%]
+    isics_sips.payment_manager:
+        class:     Isics\SipsBundle\Manager\PaymentManager
+        arguments: [%isics_sips.config%]

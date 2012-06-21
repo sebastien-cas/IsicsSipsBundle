@@ -1,10 +1,10 @@
 <?php
 
-namespace Isics\EtransactionBundle\Manager;
+namespace Isics\SipsBundle\Manager;
 
 use Symfony\Component\Process\Process;
 
-class EtransactionManager
+class PaymentManager
 {
     /**
      * @var array $params  Paramètres e-Transaction
@@ -16,7 +16,7 @@ class EtransactionManager
     /**
      * Construit l'objet
      *
-     * @param array $params  Paramètres e-transaction
+     * @param array $params  Paramètres SIPS
      */
     public function __construct(array $params)
     {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Isics\EtransactionBundle\DependencyInjection;
+namespace Isics\SipsBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class IsicsEtransactionExtension extends Extension
+class IsicsSipsExtension extends Extension
 {
     /**
      * Loads the extension configuration.
@@ -23,6 +23,6 @@ class IsicsEtransactionExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
         
-        $container->setParameter('isics_etransaction.config', $config);
+        $container->setParameter('isics_sips.config', $config);
     }
 }
