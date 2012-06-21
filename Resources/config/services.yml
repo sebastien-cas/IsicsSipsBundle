@@ -1,0 +1,4 @@
+services:
+    isics_etransaction.etransaction_manager:
+        class:     Isics\EtransactionBundle\Manager\EtransactionManager
+        arguments: [%isics_etransaction.config%]
