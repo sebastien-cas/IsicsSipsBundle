@@ -33,6 +33,7 @@ class Configuration implements ConfigurationInterface
                             ->scalarNode('block_align')->end()
                             ->scalarNode('block_order')->end()
                             ->scalarNode('textcolor')->end()
+                            ->scalarNode('logo_id')->end()
                         ->end()
                     ->end()
                 ->end()
